@@ -53,9 +53,9 @@ function test_2() {
     { split: "/" }
   );
 
-  console.log(JSON.stringify(a));
-  console.log(JSON.stringify(b));
-  console.log(JSON.stringify(c));
+  console.log("a,", JSON.stringify(a));
+  console.log("b,", JSON.stringify(b));
+  console.log("c,", JSON.stringify(c));
   console.log("d,", JSON.stringify(d));
 }
 
