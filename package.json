@@ -1,0 +1,25 @@
+{
+  "name": "json-glat",
+  "version": "1.0.0",
+  "description": "json flat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoyifan6/json-glat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiaoyifan6/json-glat/issues"
+  },
+  "homepage": "https://github.com/xiaoyifan6/json-glat#readme",
+  "keywords": [
+    "json",
+    "flat",
+    "json-flat",
+    "json-glat"
+  ],
+  "author": "xiaoyifan <http://www/mylib.xyz>",
+  "license": "MIT"
+}
