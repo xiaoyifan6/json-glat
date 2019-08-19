@@ -1,6 +1,6 @@
 {
   "name": "json-glat",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "json flat",
   "main": "index.js",
   "scripts": {
@@ -15,10 +15,14 @@
   },
   "homepage": "https://github.com/xiaoyifan6/json-glat#readme",
   "keywords": [
-    "json",
     "flat",
+    "flatten",
+    "json",
     "json-flat",
-    "json-glat"
+    "json-glat",
+    "serialize",
+    "unflatten",
+    "glat"
   ],
   "author": "xiaoyifan <http://www/mylib.xyz>",
   "license": "MIT"

@@ -13,7 +13,7 @@ const json_glat = require("json-glat");
 
 `json_glat.parse(json,options|string)`
 
-```json
+```javascript
 {
     "split": "/", // string default "."
     "root": "param", // string default undefined
@@ -93,7 +93,7 @@ result:
 
 `json_glat.glat(json,options|string)`
 
-```json
+```javascript
 {
     "split": "/", // string default "."
     "root": "param", // string default undefined
