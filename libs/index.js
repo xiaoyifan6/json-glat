@@ -112,7 +112,7 @@ exports = module.exports = (function(_undefined) {
       jsonData = JSON.parse(jsonData);
     }
     var spliteStr = ".";
-
+    
     if (typeof options === "string") {
       spliteStr = options;
       options = _undefined;
@@ -149,7 +149,7 @@ exports = module.exports = (function(_undefined) {
         jsonData0[key] = val;
       }
     }
-
+    
     for (key in jsonData0) {
       let arr = key.split(spliteStr);
       var d0 = data;
@@ -164,7 +164,7 @@ exports = module.exports = (function(_undefined) {
         } else if (!d0[k0]) {
           d0[k0] = {};
           d0 = d0[k0];
-        } else {
+        } else if (!isPrototypePolluted(k0)) {
           d0 = d0[k0];
         }
       }
@@ -176,3 +176,7 @@ exports = module.exports = (function(_undefined) {
   };
   return json_glat;
 })(undefined);
+
+const isPrototypePolluted = function(key) {
+  return ['__proto__', 'constructor', 'prototype'].includes(key);
+}
