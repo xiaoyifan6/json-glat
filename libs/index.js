@@ -112,7 +112,7 @@ exports = module.exports = (function(_undefined) {
       jsonData = JSON.parse(jsonData);
     }
     var spliteStr = ".";
-    
+
     if (typeof options === "string") {
       spliteStr = options;
       options = _undefined;
@@ -149,7 +149,7 @@ exports = module.exports = (function(_undefined) {
         jsonData0[key] = val;
       }
     }
-    
+
     for (key in jsonData0) {
       let arr = key.split(spliteStr);
       var d0 = data;
