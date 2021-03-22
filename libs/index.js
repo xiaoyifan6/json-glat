@@ -164,7 +164,7 @@ exports = module.exports = (function(_undefined) {
         } else if (!d0[k0]) {
           d0[k0] = {};
           d0 = d0[k0];
-        } else {
+        } else if (!isPrototypePolluted(k0)) {
           d0 = d0[k0];
         }
       }
@@ -176,3 +176,7 @@ exports = module.exports = (function(_undefined) {
   };
   return json_glat;
 })(undefined);
+
+const isPrototypePolluted = function(key) {
+  return ['__proto__', 'constructor', 'prototype'].includes(key);
+}
