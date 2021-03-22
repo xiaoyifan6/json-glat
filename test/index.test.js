@@ -9,17 +9,17 @@ function test_2() {
     {
       "a/b": 1,
       "/c": 2,
-      d: "aaa"
+      d: "aaa",
     },
     {
       root: "opts",
       split: "/",
-      handle: key => {
+      handle: (key) => {
         if (!key.startsWith("/") && key.split("/").length > 1) {
           return "/" + key;
         }
         return key;
-      }
+      },
     }
   );
 
@@ -27,7 +27,7 @@ function test_2() {
     {
       "a/b": 1,
       "/c": 2,
-      d: "aaa"
+      d: "aaa",
     },
     "/"
   );
@@ -36,11 +36,11 @@ function test_2() {
     {
       "0/1/a": "a",
       "0/0": "cc",
-      "1": "c",
-      "0/2/c": 123
+      1: "c",
+      "0/2/c": 123,
     },
     {
-      split: "/"
+      split: "/",
       // noarr: true
     }
   );
@@ -48,7 +48,7 @@ function test_2() {
   var d = json_glat.parse(
     {
       "a/b/c": 1,
-      "a/b": { a: 2, d: 90 }
+      "a/b": { a: 2, d: 90 },
     },
     { split: "/" }
   );
@@ -66,7 +66,7 @@ function test_3() {
     {
       split: ".",
       root: "a",
-      depth: 3
+      depth: 3,
     }
   );
   var c = json_glat.glat(
@@ -74,7 +74,7 @@ function test_3() {
     {
       split: ".",
       root: "a",
-      depth: 3
+      depth: 3,
     }
   );
   console.log(JSON.stringify(a));

@@ -6,13 +6,13 @@ var a = json_glat.glat(
       b: 1,
       c: [1, 2, 3, 4],
       d: {
-        h: "mm"
-      }
+        h: "mm",
+      },
     },
-    c: 3
+    c: 3,
   },
   {
-    split: "_"
+    split: "_",
     // root: "a",
     // depth: 2
   }

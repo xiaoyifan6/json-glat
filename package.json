@@ -1,6 +1,6 @@
 {
   "name": "json-glat",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "json flat",
   "main": "index.js",
   "scripts": {
